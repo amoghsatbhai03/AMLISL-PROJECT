@@ -1,0 +1,146 @@
+{
+  "model_name": "Calibrated LinearSVC",
+  "trained_at": "2026-10-11T00:22:13.595993",
+  "total_samples": 5292,
+  "train_samples": 4242,
+  "test_samples": 1050,
+  "classes": [
+    "Bank Account Services",
+    "Credit Card & Prepaid Card",
+    "Credit Reporting & Identity Theft",
+    "Money Transfers & Digital Payments",
+    "Mortgages & Housing Loans",
+    "Personal & Consumer Loans"
+  ],
+  "metrics": {
+    "accuracy": 0.9571,
+    "train_accuracy": 1.0,
+    "generalization_gap": 0.0429,
+    "macro_f1": 0.9572,
+    "weighted_f1": 0.9572,
+    "precision": 0.9579,
+    "recall": 0.9571
+  },
+  "regularization": {
+    "word_max_features": 4000,
+    "char_max_features": 6000,
+    "total_vocab_cap": 10000,
+    "overfitting_control": "L2 regularization penalty + vocabulary pruning + sublinear TF-IDF",
+    "generalization_verdict": "Well-regularized (No memorization)"
+  },
+  "per_class_metrics": {
+    "Bank Account Services": {
+      "precision": 0.9086,
+      "recall": 0.9086,
+      "f1_score": 0.9086,
+      "support": 175
+    },
+    "Credit Card & Prepaid Card": {
+      "precision": 0.9829,
+      "recall": 0.9829,
+      "f1_score": 0.9829,
+      "support": 175
+    },
+    "Credit Reporting & Identity Theft": {
+      "precision": 0.9942,
+      "recall": 0.9771,
+      "f1_score": 0.9856,
+      "support": 175
+    },
+    "Money Transfers & Digital Payments": {
+      "precision": 0.9202,
+      "recall": 0.9886,
+      "f1_score": 0.9532,
+      "support": 175
+    },
+    "Mortgages & Housing Loans": {
+      "precision": 0.994,
+      "recall": 0.9543,
+      "f1_score": 0.9738,
+      "support": 175
+    },
+    "Personal & Consumer Loans": {
+      "precision": 0.9477,
+      "recall": 0.9314,
+      "f1_score": 0.9395,
+      "support": 175
+    }
+  },
+  "confusion_matrix": {
+    "labels": [
+      "Bank Account Services",
+      "Credit Card & Prepaid Card",
+      "Credit Reporting & Identity Theft",
+      "Money Transfers & Digital Payments",
+      "Mortgages & Housing Loans",
+      "Personal & Consumer Loans"
+    ],
+    "matrix": [
+      [
+        159,
+        3,
+        0,
+        12,
+        1,
+        0
+      ],
+      [
+        3,
+        172,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        171,
+        0,
+        0,
+        4
+      ],
+      [
+        2,
+        0,
+        0,
+        173,
+        0,
+        0
+      ],
+      [
+        3,
+        0,
+        0,
+        0,
+        167,
+        5
+      ],
+      [
+        8,
+        0,
+        1,
+        3,
+        0,
+        163
+      ]
+    ]
+  },
+  "model_comparison": {
+    "Calibrated LinearSVC": {
+      "cv_f1_macro": 1.0,
+      "cv_f1_std": 0.0,
+      "time_sec": 9.97
+    },
+    "Logistic Regression": {
+      "cv_f1_macro": 0.9998,
+      "cv_f1_std": 0.0005,
+      "time_sec": 6.79
+    },
+    "Complement Naive Bayes": {
+      "cv_f1_macro": 0.9755,
+      "cv_f1_std": 0.0045,
+      "time_sec": 2.13
+    }
+  }
+}
